@@ -1,0 +1,17 @@
+########
+
+CODE CHALLENGE
+
+Please develop a very simple application that accepts two image files as input (see attached files). 
+The application should include a graphical user interface that displays both images side by side. 
+The user should be able to select a location in one image. Using a method of your choice (e.g. block matching), 
+the corresponding location in the other image shall be identified and highlighted 
+(the images show the same scene from roughly the same view point). 
+By location we mean a pixel and its surrounding pixels. 
+This problem can be solved in image space, you don't have to take into account the scene geometry 
+and can assume that there's no perspective distortion.
+
+You're free to choose the programming language and environment and may use third party libraries, 
+you should be able to explain your solution, though. We're more interested in the approach and its implementation, not so much in a polished and clean interface.
+
+#########
