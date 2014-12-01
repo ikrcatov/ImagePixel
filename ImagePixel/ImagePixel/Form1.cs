@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
+using System.IO;
 
 namespace ImagePixel
 {
@@ -17,6 +18,7 @@ namespace ImagePixel
     {
         List<PictureBox> listPB;
         Point myPoint = new Point(-1, -1);
+        Point myPoint2 = new Point(-1, -1);
 
         public Form1()
         {
@@ -92,20 +94,27 @@ namespace ImagePixel
                 //e.Graphics.FillRectangle(Brushes.Green, myPoint.X, myPoint.Y, 10, 10);
             }
         }
-
+        
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             if (pictureBox1 != null && pictureBox1.Image != null)
             {
-                System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
-                ToolTip1.SetToolTip(this.pictureBox1, "Hello");
-                //MessageBox.Show(string.Format("X: {0} Y: {1}", MousePosition.X, MousePosition.Y));
+                if (pictureBox2 != null && pictureBox2.Image != null)
+                {
+                    myPoint = new Point(e.X, e.Y);
+                    pictureBox1.Invalidate();
 
-                Bitmap b = new Bitmap(pictureBox1.Image);
-                myPoint = new Point(e.X, e.Y);
+                    myPoint2 = new Point(e.X, e.Y);
+                    pictureBox2.Invalidate();
+                }
+            }
+        }
 
-                pictureBox1.Invalidate(); 
-                pictureBox2.Invalidate();
+        private void pictureBox2_Paint(object sender, PaintEventArgs e)
+        {
+            if (myPoint2.X != -1 || myPoint2.Y != -1)
+            {
+                e.Graphics.DrawRectangle(new Pen(Color.Yellow), myPoint2.X, myPoint2.Y, 10, 10);
             }
         }
     }

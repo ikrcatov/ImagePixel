@@ -19,3 +19,11 @@ G:\ImagePixel\ImagePixel\obj\Debug\ImagePixel.Properties.Resources.resources
 G:\ImagePixel\ImagePixel\obj\Debug\ImagePixel.csproj.GenerateResource.Cache
 G:\ImagePixel\ImagePixel\obj\Debug\ImagePixel.exe
 G:\ImagePixel\ImagePixel\obj\Debug\ImagePixel.pdb
+D:\GitHub\ImagePixelRepository\ImagePixel\ImagePixel\bin\Debug\ImagePixel.exe
+D:\GitHub\ImagePixelRepository\ImagePixel\ImagePixel\bin\Debug\ImagePixel.pdb
+D:\GitHub\ImagePixelRepository\ImagePixel\ImagePixel\bin\Debug\ImagePixel.exe.config
+D:\GitHub\ImagePixelRepository\ImagePixel\ImagePixel\obj\Debug\ImagePixel.Form1.resources
+D:\GitHub\ImagePixelRepository\ImagePixel\ImagePixel\obj\Debug\ImagePixel.Properties.Resources.resources
+D:\GitHub\ImagePixelRepository\ImagePixel\ImagePixel\obj\Debug\ImagePixel.csproj.GenerateResource.Cache
+D:\GitHub\ImagePixelRepository\ImagePixel\ImagePixel\obj\Debug\ImagePixel.exe
+D:\GitHub\ImagePixelRepository\ImagePixel\ImagePixel\obj\Debug\ImagePixel.pdb

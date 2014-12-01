@@ -80,7 +80,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(488, 368);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox2_Paint);
             // 
             // openFileDialog1
             // 
